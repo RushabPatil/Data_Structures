@@ -7,12 +7,37 @@ struct Node {
     Node *next; // next node in the Linked List
 };
 
+
 void printList(Node *head) {
     while (head != NULL) {
         cout << head->data << " ";
         head = head->next;
     }
     cout << endl;    
+}
+
+
+void insertAtHead(Node **head, int data) {
+     
+    Node *newNode = new Node();
+    newNode->data = data;
+    newNode->next = *head;
+    *head = newNode;
+}
+
+void insertAtTail(Node **head, int data) {
+    Node *newNode = new Node();
+    newNode->data = data;
+    newNode->next = NULL;
+    if (*head == NULL) {
+        *head = newNode;
+    } else {
+        Node *temp = *head;
+        while (temp->next != NULL) {
+            temp = temp->next;
+        }
+        temp->next = newNode;
+    }
 }
 
 int main()
