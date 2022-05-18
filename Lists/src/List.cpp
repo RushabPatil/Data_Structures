@@ -16,9 +16,9 @@ List::List()
 
 
 /**
- * @brief 
+ * @brief Add a node to the tail of the list
  * 
- * @param data 
+ * @param data is the data to be added to the list
  */
 void List::addNodetoTail(int data)
 {
@@ -46,9 +46,9 @@ void List::addNodetoTail(int data)
 }
 
 /**
- * @brief 
+ * @brief Add a node to the head of the list
  * 
- * @param data 
+ * @param data is the data added to the list
  */
 void List::addNodetoHead(int data)
 {
@@ -73,9 +73,9 @@ void List::addNodetoHead(int data)
 
 
 /**
- * @brief 
+ * @brief Delete a node from the list
  * 
- * @param data 
+ * @param data is the data to be deleted from the list
  */
 void List::deleteNode(int data)
 {
